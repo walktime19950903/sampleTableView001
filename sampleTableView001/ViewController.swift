@@ -42,6 +42,8 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     }
     
     //3.リストに表示する文字列を決定し、表示
+    
+    var sections = [String]()
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
@@ -51,6 +53,8 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
 //        cell.textLabel?.text = "\(indexPath.row)行目"
         cell.textLabel?.text = teaList[indexPath.row]
         
+        cell.textLabel?.textColor = UIColor.orange
+        cell.backgroundColor = UIColor.gray
         
         //文字を設定したセルを返す
         return cell

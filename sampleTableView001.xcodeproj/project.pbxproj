@@ -15,6 +15,11 @@
 		CE24E60A1FA6BC98008A5F4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE24E6081FA6BC98008A5F4D /* LaunchScreen.storyboard */; };
 		CE24E6151FA6BC98008A5F4D /* sampleTableView001Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24E6141FA6BC98008A5F4D /* sampleTableView001Tests.swift */; };
 		CE24E6201FA6BC98008A5F4D /* sampleTableView001UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24E61F1FA6BC98008A5F4D /* sampleTableView001UITests.swift */; };
+		CE8330D31FAC0E2900A4F052 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8330D21FAC0E2900A4F052 /* DetailViewController.swift */; };
+		CE8330D81FAC4EF600A4F052 /* tea1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE8330D41FAC4EF500A4F052 /* tea1.jpeg */; };
+		CE8330D91FAC4EF600A4F052 /* tea3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE8330D51FAC4EF500A4F052 /* tea3.jpeg */; };
+		CE8330DA1FAC4EF600A4F052 /* tea0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE8330D61FAC4EF500A4F052 /* tea0.jpeg */; };
+		CE8330DB1FAC4EF600A4F052 /* tea2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE8330D71FAC4EF500A4F052 /* tea2.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		CE24E61B1FA6BC98008A5F4D /* sampleTableView001UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleTableView001UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE24E61F1FA6BC98008A5F4D /* sampleTableView001UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleTableView001UITests.swift; sourceTree = "<group>"; };
 		CE24E6211FA6BC98008A5F4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8330D21FAC0E2900A4F052 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CE8330D41FAC4EF500A4F052 /* tea1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tea1.jpeg; sourceTree = "<group>"; };
+		CE8330D51FAC4EF500A4F052 /* tea3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tea3.jpeg; sourceTree = "<group>"; };
+		CE8330D61FAC4EF500A4F052 /* tea0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tea0.jpeg; sourceTree = "<group>"; };
+		CE8330D71FAC4EF500A4F052 /* tea2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tea2.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +109,13 @@
 		CE24E5FB1FA6BC97008A5F4D /* sampleTableView001 */ = {
 			isa = PBXGroup;
 			children = (
+				CE8330D61FAC4EF500A4F052 /* tea0.jpeg */,
+				CE8330D41FAC4EF500A4F052 /* tea1.jpeg */,
+				CE8330D71FAC4EF500A4F052 /* tea2.jpeg */,
+				CE8330D51FAC4EF500A4F052 /* tea3.jpeg */,
 				CE24E5FC1FA6BC97008A5F4D /* AppDelegate.swift */,
 				CE24E5FE1FA6BC97008A5F4D /* ViewController.swift */,
+				CE8330D21FAC0E2900A4F052 /* DetailViewController.swift */,
 				CE24E6001FA6BC97008A5F4D /* Main.storyboard */,
 				CE24E6061FA6BC98008A5F4D /* Assets.xcassets */,
 				CE24E6081FA6BC98008A5F4D /* LaunchScreen.storyboard */,
@@ -235,9 +250,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8330D91FAC4EF600A4F052 /* tea3.jpeg in Resources */,
+				CE8330D81FAC4EF600A4F052 /* tea1.jpeg in Resources */,
 				CE24E60A1FA6BC98008A5F4D /* LaunchScreen.storyboard in Resources */,
 				CE24E6071FA6BC98008A5F4D /* Assets.xcassets in Resources */,
 				CE24E6021FA6BC97008A5F4D /* Main.storyboard in Resources */,
+				CE8330DB1FAC4EF600A4F052 /* tea2.jpeg in Resources */,
+				CE8330DA1FAC4EF600A4F052 /* tea0.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +284,7 @@
 				CE24E6051FA6BC98008A5F4D /* sampleTableView001.xcdatamodeld in Sources */,
 				CE24E5FF1FA6BC97008A5F4D /* ViewController.swift in Sources */,
 				CE24E5FD1FA6BC97008A5F4D /* AppDelegate.swift in Sources */,
+				CE8330D31FAC0E2900A4F052 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

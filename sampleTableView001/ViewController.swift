@@ -8,7 +8,11 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     @IBOutlet weak var myTableView: UITableView!
     
     //表示したいデータ（配列）
-    var teaList = ["ダージリン","アールグレイ","アッサム","オレンジペコ"]
+    var teaList = ["オレンジペコ","ダージリン","アッサム","アールグレイ"]
+    
+    //何行目が選択されたか保存する変数
+    //-1は、何もまだ行番号が保存されてないという目印
+    var selectedIndex = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,13 +58,31 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         cell.textLabel?.text = teaList[indexPath.row]
         
         cell.textLabel?.textColor = UIColor.orange
-        cell.backgroundColor = UIColor.gray
+        cell.backgroundColor = UIColor.green
         
         //文字を設定したセルを返す
         return cell
     }
 
+    //セルをタップしたら発動
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("\(indexPath.row + 1)行目がタップされたました。")
+
+        //選択された行番号を保存
+        selectedIndex = indexPath.row
+        
+        //セグエの名前を指定して画面遷移処理を発動
+        performSegue(withIdentifier: "showDetail", sender: nil)
+        
+    }
     
+    //セグエを使って、
+    override func prepare(for segue: UIStoryboardSegue,sender: Any?) {
+        //次の画面のインスタンス（オブジェクト）を取得
+        var dvc:DetailViewController = segue.destination as!DetailViewController
+        //次の画面のプロパティ（メンバ変数）passedIndexに選択された行番号を渡す
+        dvc.passedIndex = selectedIndex
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
